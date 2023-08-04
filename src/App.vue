@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import { NInput } from  'naive-ui';
-
-const status = ref<'success'|'error'|'warning'|undefined>(undefined);
+import  {  HelloWorld } from  '@/components';
 </script>
 
 <template>
-
-  <n-input :status="status"></n-input>
+  <hello-world msg="hello world" status="success"></hello-world>
 </template>
 <style scoped>
 .logo {
